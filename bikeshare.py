@@ -89,8 +89,8 @@ def time_stats(df):
     # display the most common month
     popular_month1 = df['month'].mode()[0]
     months2 = pd.Series(data = ['january', 'february', 'march', 'april', 'may', 'june'], index = [1,2,3,4,5,6])
-    popular_month2 = months2[popular_month1].title()
-    print('Based on your selection the most popular month for riding a bike is ',popular_month2)
+    popular_month = months2[popular_month1].title()
+    print('Based on your selection the most popular month for riding a bike is ',popular_month)
 
     # display the most common day of week
     popular_day = df['day_name'].mode()[0]
