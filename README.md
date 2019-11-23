@@ -15,5 +15,11 @@ Files used in the creation of the project are three data files -
 The project also contains one python scripting file -
 * bikeshare.py
 
+### Software requirements
+Software needed to explore the data or the python script are -
+* Python (with numpy and pandas add ons)
+* A text editor like Visual Studio Code or Atom
+* A shell terminal application like GitBash
+
 ### Credits
-I would like to credit [khaledimad](https://github.com/khaledimad/Explore-US-Bikeshare-Data/blob/master/README.md) for how to write a readme for the bikeshare project. 
+I would like to credit [khaledimad](https://github.com/khaledimad/Explore-US-Bikeshare-Data/blob/master/README.md) for how to write a readme for the bikeshare project.
