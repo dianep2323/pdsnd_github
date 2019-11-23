@@ -98,7 +98,13 @@ def time_stats(df):
 
     # display the most common start hour
     popular_hour = df['hour'].mode()[0]
-    print('Based on your selection the most popular hour for riding a bike is ',popular_hour)
+    if popular_hour < 12:
+        pophr_txt = (str(popular_hour) + "am")
+    elif popular_hour > 12:
+        pophr_txt = (str((popular_hour)-12) + "pm")
+    else:
+        pophr_txt = (str(popular_hour) + "pm")
+    print('Based on your selection the most popular hour for riding a bike is ',pophr_txt)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
