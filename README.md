@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on 23 November 2019.
 
 ### Project Title
-Replace the Project Title
+Exploration of US Bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+This project uses Python scripting to explore US Bikeshare data across three cities - Chicago, New York City and Washington. It involves interactive input from the user and shows a range of useful statistics, some of which are - popular starting/finishing times, trip duration, most common start and end stations and user type. It also allows the user to view a sample of the data.
 
 ### Files used
-Include the files used
+Files used in the creation of the project are three data files -
+* chicago.csv
+* new_york_city.csv
+* washington.csv  
+The project also contains one python scripting file -
+* bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I would like to credit [khaledimad](https://github.com/khaledimad/Explore-US-Bikeshare-Data/blob/master/README.md) for how to write a readme for the bikeshare project. 
