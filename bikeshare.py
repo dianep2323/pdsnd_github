@@ -89,8 +89,8 @@ def time_stats(df):
     # display the most common month
     popular_month1 = df['month'].mode()[0]
     months2 = pd.Series(data = ['january', 'february', 'march', 'april', 'may', 'june'], index = [1,2,3,4,5,6])
-    popular_month2 = months2[popular_month1].title()
-    print('Based on your selection the most popular month for riding a bike is ',popular_month2)
+    popular_month = months2[popular_month1].title()
+    print('Based on your selection {} is the most popular month for riding a bike'.format(popular_month))
 
     # display the most common day of week
     popular_day = df['day_name'].mode()[0]
@@ -98,7 +98,13 @@ def time_stats(df):
 
     # display the most common start hour
     popular_hour = df['hour'].mode()[0]
-    print('Based on your selection the most popular hour for riding a bike is ',popular_hour)
+    if popular_hour < 12:
+        pophr_txt = (str(popular_hour) + "am")
+    elif popular_hour > 12:
+        pophr_txt = (str((popular_hour)-12) + "pm")
+    else:
+        pophr_txt = (str(popular_hour) + "pm")
+    print('Based on your selection the most popular hour for riding a bike is ',pophr_txt)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
